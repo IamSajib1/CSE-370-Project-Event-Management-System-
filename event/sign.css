@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('home.jpg');
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.form-box {
+  width: 380px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.form-value h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.inputbox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 10px 40px;
+  background: none;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 4px; /* Optional for rounded corners */
+}
+
+.inputbox label {
+  position: absolute;
+  top: -20px; /* Adjust based on your design */
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.8); /* Match form background */
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+input:focus + label,
+input:valid + label {
+  color: rgb(208, 13, 13);
+  background: transparent; /* Remove background to blend with the form */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: indianred;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+button:hover {
+  background: #b53a3a;
+}
+
+.register {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register p {
+  color: white;
+}
+
+.register a {
+  color: indianred;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.password-info {
+  color: #f8d7da;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+input:invalid {
+  border: 2px solid #f8d7da;
+}
+
+input:valid {
+  border: 2px solid #c3e6cb;
+}

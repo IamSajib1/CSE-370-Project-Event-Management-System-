@@ -1,0 +1,177 @@
+/* General reset and box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Styling for the header and navigation */
+header {
+    width: 100%;
+    height: 150px; /* Full height for header */
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin-left: 20px; /* Move the logo a bit to the left */
+}
+
+/* Menu styling */
+.menu a {
+    position: relative; 
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.menu a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: indianred; /* Updated to match the desired palette */
+    transition: width 0.4s ease;
+}
+
+.menu a:hover:before {
+    width: 100%;
+}
+
+/* Logout button styling */
+.logout {
+    margin-right: 50px; /* Move logout button slightly to the left */
+}
+
+.logout a {
+    background-color: rgb(254, 81, 81); /* Red background for logout button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none; /* Remove underline */
+}
+
+.logout a:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    flex: 1; /* Allow main to grow and fill space */
+}
+
+/* User welcome message styling */
+h1 {
+    color: #2c3e50(96, 180, 254); /* Changed to match the desired color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Package title styling */
+.package-title {
+    font-size: 1.5em; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    color: indianred; /* Match the desired color */
+    margin-top: 20px; /* Space above the title */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: none;
+    margin-top: 20px; /* Space above the table */
+}
+
+th, td {
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    border-right: 2px solid #000000;
+}
+
+/* Remove the last column's right border */
+td:last-child {
+    border-right: none;
+}
+
+th {
+    background-color: indianred; /* Updated to match the desired palette */
+    color: white;
+}
+
+/* Button styling */
+button {
+    background-color: #d14242; /* Main button color */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c0392b; /* Hover effect */
+}
+
+/* Updated background with gradient */
+body {
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    color: #2c3e50; /* General text color */
+    display: flex;
+    flex-direction: column; /* Column layout */
+    height: 100%; /* Full height for the body */
+}
+
+/* Footer styling */
+.footer {
+    width: 100%;
+    background-color: rgb(109, 15, 15); /* Indigo background */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Padding for spacing */
+    border-top: 2px solid black; /* Black border at the top */
+    position: relative; /* Position relative to the page */
+    bottom: 0; /* Align to the bottom */
+}
+
+/* Ensure footer text is styled */
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Space between tables */
+.order-box + .reviews-box, 
+.reviews-box + .contact-box {
+    margin-top: 60px; /* Space between boxes */
+}
+
+/* No orders found message styling */
+td[colspan="7"] {
+    font-style: italic;
+    color: #999;
+}

@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    width: 100%;
+    height: 300px; /* Reduced the height */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.menu a {
+    position: relative; 
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.menu a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: indianred; 
+    transition: width 0.4s ease;
+}
+
+.menu a:hover:before {
+    width: 100%;
+}
+
+.logout {
+    background: rgb(243, 86, 86);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: white; 
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+    background-color: #fdacac; /* Ash background behind the form */
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-container {
+    max-width: 600px;
+    background-color: #fff; /* Form background white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid black; /* Black border for the form */
+}
+
+.booking-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.booking-container p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.booking-container input[type="text"],
+.booking-container input[type="email"],
+.booking-container input[type="date"],
+.booking-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-container input[type="submit"] {
+    background-color: indianred;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-container input[type="submit"]:hover {
+    background-color: darkred;
+}
+
+footer {
+    background-color: indianred; /* Indian red for the bottom bar */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid black; /* Black border on top of the footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

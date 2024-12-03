@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+
+.menu a {
+    position: relative; 
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+
+.menu a:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: indianred; 
+    transition: width 0.4s ease;
+}
+
+.menu a:hover:before {
+    width: 100%;
+}
+
+
+.Signup {
+    background: rgb(243, 86, 86);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.Signup a {
+    text-decoration: none;
+    color: white; 
+    font-size: 20px;
+}
+
+.htxt {
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+}
+
+.htxt span {
+    letter-spacing: 5px;
+}
+
+.htxt h1 {
+    font-size: 3.5em;
+}
+
+
+.htxt a {
+    text-decoration: none;
+    background: indianred;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+}
